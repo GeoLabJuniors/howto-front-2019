@@ -1,0 +1,328 @@
+/*fonts */
+h1{
+	font-family: "BPG Nino Mkhedruli Book";
+}
+
+p{
+	font-family: "BPG Nino Mkhedruli Book";
+}
+
+a{
+font-family: "BPG Nino Mtavruli", sans-serif;
+}
+
+h4{
+font-family: "BPG Nino Mtavruli", sans-serif;
+}
+
+/*{
+	font-family: "BPG Arial", sans-serif;
+} */
+
+
+.container{
+	width: 940px;
+	margin: 0 auto;
+}
+
+/* header */
+header{
+	padding: 20px 0;
+}
+
+header .container {
+     padding: 0px;
+}
+
+.justify-content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo a{
+	font-size:28px;
+	width: 85px;
+}
+a{
+	color:#949494;
+}
+
+nav ul{
+	display: flex;
+}
+
+nav li{
+	margin-left: 50px;
+}
+
+nav a{
+	color:#949494;
+	font-size:16px; 
+}
+
+
+.search{
+	height:16px;
+}
+
+/*burger*/
+header label{
+	display: none;
+	width: 50px;
+	height: 50px;
+	padding: 30px;
+	border-left: 2px solid #B8EDF8;
+	float: right;
+}
+header label:hover{
+	cursor: pointer;
+	background:#46A8D4 ;
+}
+input.checkbox{
+	display: none;
+}
+
+/*banner*/
+.banner img{
+	width:100%;
+}
+.banner {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+.banner-text {
+	width: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+h4{
+	color:#46A8D4;
+	
+}
+
+input[type=submit]{
+	background-color: #FFFFFF;
+	height: 30px;
+	width: 100px;
+	color: #7EC4CE;
+	border: 1px solid #949494;
+	border-radius: 25px;
+}
+input[type=submit]:hover{
+	color: #46A8D4;
+}
+
+/* globus*/
+
+.Globus{
+	width: 805px;
+	margin: auto;
+	margin-top: 10px;
+}
+.section{
+	margin-top: 30px;
+	width:80px;
+
+}
+.section a{
+    font-size: 15px;
+    color:#46A8D4;
+}
+
+.title{
+	width: 940px;
+	margin:0 auto;
+	margin-top: 70px;
+}
+
+/* container*/
+.Container{
+	margin:0 auto;
+	width: 940px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.Box {
+    display:inline-block;
+    height: 370px;
+    box-sizing: border-box;
+    flex: 0 300px;
+    margin-top: 10px;
+    position:relative;
+
+    
+}
+
+.Box .frame{
+	border: 0.5px solid #949494;
+	border-top: none;
+	margin-top: 15px;
+	height: 165px;
+}
+.img-wrapper{
+	padding:0;
+}
+
+.Box img{
+	width: 100%;
+	
+}
+
+.square{
+	width: 36px;
+	height: 30px;
+	background-color:white;
+	overflow:hidden;
+	margin-left: 265px;
+	position:absolute;
+	top:160px;
+	background:none;
+	
+
+}
+
+.sircle{
+	height: 72px;
+	width: 72px;
+	border-radius: 50%;
+	background-color: #46A8D4;
+	position: relative;
+
+
+}
+
+.like img{
+	background-color: #46A8D4;
+	width:15px;
+	position:absolute;
+	left:16px;
+	top:10px;
+	
+}
+
+img .heart{
+	color:white;
+}
+.Box a{
+	margin-left: 20px;
+}
+.Box h4{
+
+	color: #517089;
+	margin-left: 20px;
+
+}
+
+
+.Box p{
+display: inline-block;
+color:#46A8D4;
+width: 280px;
+margin-left: 20px;
+}
+
+
+
+/* footer */
+
+.container .fb{
+	width:30px;
+	margin-left: 20px;
+}
+.container .instagram{
+	width:30px;
+}
+
+.container a{
+	color:#46A8D4;
+}
+
+
+/*responsive*/
+@media only screen and (max-width: 980px){
+	header{
+		padding-right: 0px;
+	}
+	header label{
+		display: block;
+	}
+	nav {
+		position: absolute;
+		background: #B8EDF8;
+		width: 100px;
+		margin-left: -100%;
+		transition: all 0.5s;
+	}
+	nav ul {
+		flex-direction: column;
+	}
+	nav li{
+		line-height: 50px;
+		border-top: 1px solid #ffffff;
+	}
+	nav li a:hover{
+		color: #ffffff;
+	}
+	input[type="checkbox"]:checked ~ nav {
+		margin: 0;
+		right: 0%;
+		z-index: 1;
+	}
+
+	.container{
+		width:620px;
+		margin:0 auto;
+	}
+	.Container{
+		width:620px;
+		margin:0 auto;
+	}
+
+	.lastChild{
+		display:none;
+	}
+	.Globus{
+	width: 485px;
+	margin: auto;
+	margin-top: 10px;
+    }
+    .Container h1{
+    	font-size: 20px;
+    }
+}
+
+    @media only screen and (max-width: 630px){
+    .container{
+		width:300px;
+		margin:0 auto;
+	}
+	.Container{
+		width:300px;
+		margin:0 auto;
+	}
+	.lastChild{
+		display:none;
+	}
+
+	.Globus{
+	width: 180px;
+	margin: auto;
+	margin-top: 10px;
+    }
+    h1{
+    	font-size: 20px;
+    }
+    .banner-text p{
+    	display: none;
+    }
+    .Globus{
+    	display: none;
+    }
+    }
+
