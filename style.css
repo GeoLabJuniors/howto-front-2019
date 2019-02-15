@@ -1,6 +1,6 @@
 /*fonts */
 h1{
-	font-family: "BPG Nino Mkhedruli Book";
+	font-family: "BPG Nino Mtavruli", sans-serif;;
 }
 
 p{
@@ -15,14 +15,16 @@ h4{
 font-family: "BPG Nino Mtavruli", sans-serif;
 }
 
-/*{
-	font-family: "BPG Arial", sans-serif;
-} */
 
 
 .container{
-	width: 940px;
+	width: 960px;
 	margin: 0 auto;
+}
+
+.board{
+	width:960px;
+	margin:0 auto;
 }
 
 /* header */
@@ -47,6 +49,11 @@ header .container {
 a{
 	color:#949494;
 }
+.logo:hover{
+	color:#46A8D4;
+	font-size:28px;
+	text-decoration: none;
+}
 
 nav ul{
 	display: flex;
@@ -59,6 +66,11 @@ nav li{
 nav a{
 	color:#949494;
 	font-size:16px; 
+}
+nav a:hover{
+	color:#46A8D4;
+	font-size:18px;
+	text-decoration: none;
 }
 
 
@@ -84,6 +96,27 @@ input.checkbox{
 }
 
 /*banner*/
+.carousel-item{
+	padding:0;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.carousel-indicators li{
+	width:10px;
+	height: 10px;
+	border-radius: 50%;
+}
+.carousel-control-prev-icon{
+	background-color: #949494;
+	height: 30px;
+	width:30px;
+	border-radius: 50%;
+}
+   
+
 .banner img{
 	width:100%;
 }
@@ -93,7 +126,7 @@ input.checkbox{
 	color: white;
 }
 .banner-text {
-	width: 300px;
+	width: 80%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -107,10 +140,11 @@ h4{
 input[type=submit]{
 	background-color: #FFFFFF;
 	height: 30px;
-	width: 100px;
+	width: 120px;
 	color: #7EC4CE;
 	border: 1px solid #949494;
 	border-radius: 25px;
+	top:6px;
 }
 input[type=submit]:hover{
 	color: #46A8D4;
@@ -119,7 +153,7 @@ input[type=submit]:hover{
 /* globus*/
 
 .Globus{
-	width: 805px;
+	width: 820px;
 	margin: auto;
 	margin-top: 10px;
 }
@@ -128,21 +162,33 @@ input[type=submit]:hover{
 	width:80px;
 
 }
+.section img{
+	width:70px;
+}
 .section a{
     font-size: 15px;
     color:#46A8D4;
 }
+.section a:hover{
+	font-size: 16px;
+	text-decoration: none;
+}
 
 .title{
-	width: 940px;
+	width: 960px;
 	margin:0 auto;
 	margin-top: 70px;
+}
+.title h1{
+	margin-top:50px;
+	margin-bottom:30px;
+	font-size: 30px;
 }
 
 /* container*/
 .Container{
 	margin:0 auto;
-	width: 940px;
+	width: 960px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -167,6 +213,10 @@ input[type=submit]:hover{
 }
 .img-wrapper{
 	padding:0;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .Box img{
@@ -226,6 +276,9 @@ color:#46A8D4;
 width: 280px;
 margin-left: 20px;
 }
+.frame a:hover{
+	color:#46A8D4;
+}
 
 
 
@@ -239,13 +292,31 @@ margin-left: 20px;
 	width:30px;
 }
 
-.container a{
+footer a{
 	color:#46A8D4;
+}
+
+footer   img {
+    transition: transform .2s;
+}
+ footer img:hover{
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.15);
 }
 
 
 /*responsive*/
-@media only screen and (max-width: 980px){
+@media only screen and (min-width: 1200px){
+	.container, .Container, .board{
+		width:1200px;
+	}
+
+	.Globus{
+		width:1000px;
+	}
+}
+@media only screen and (max-width: 768px){
 	header{
 		padding-right: 0px;
 	}
@@ -279,7 +350,7 @@ margin-left: 20px;
 		width:620px;
 		margin:0 auto;
 	}
-	.Container{
+	.Container, .board{
 		width:620px;
 		margin:0 auto;
 	}
@@ -297,12 +368,12 @@ margin-left: 20px;
     }
 }
 
-    @media only screen and (max-width: 630px){
+    @media only screen and (max-width: 576px){
     .container{
 		width:300px;
 		margin:0 auto;
 	}
-	.Container{
+	.Container, .board{
 		width:300px;
 		margin:0 auto;
 	}
