@@ -109,12 +109,7 @@ input.checkbox{
 	height: 10px;
 	border-radius: 50%;
 }
-.carousel-control-prev-icon{
-	background-color: #949494;
-	height: 30px;
-	width:30px;
-	border-radius: 50%;
-}
+
    
 
 .banner img{
@@ -278,6 +273,7 @@ margin-left: 20px;
 }
 .frame a:hover{
 	color:#46A8D4;
+	text-decoration: none;
 }
 
 
@@ -380,6 +376,14 @@ footer   img {
 	.lastChild{
 		display:none;
 	}
+	.banner-text h1{
+		font-size: 15px;
+
+	}
+	.banner-text input[type=submit]{
+		width:100px;
+
+	}
 
 	.Globus{
 	width: 180px;
@@ -396,4 +400,6 @@ footer   img {
     	display: none;
     }
     }
+
+   
 
