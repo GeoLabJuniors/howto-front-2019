@@ -6,85 +6,110 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- <link rel="stylesheet" href="/path/to/bpg-nino-mkhedruli.min.css">
 	<link rel="stylesheet" href="/node_modules/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css">
- -->
+-->
 <!-- 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+    <link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<style>
+
+.categories-slider {	
+	width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.categories-slider .category-item {	
+    background-color: #eaeaea;
+    margin: 0 10px;
+}
+
+.slick-prev:before, .slick-next:before {
+   color: #755757;
+}
+
+
+</style>
+
+
 </head>
 <body>
-		<header>
-  		<div class="container justify-content">
-  		<a class="logo" href="#">HOWTO</a>
+	<header>
+		<div class="container justify-content">
+			<a class="logo" href="#">HOWTO</a>
 
-  		<input class="checkbox" type="checkbox" id="menu-icon">
-  			<label for="menu-icon"><img src="img/menu-icon.svg"></label>
+			<input class="checkbox" type="checkbox" id="menu-icon">
+			<label for="menu-icon"><img src="img/menu-icon.svg"></label>
 
-  		<nav class="nav">
-  			<ul>
-  				<li>
-  					<a href="#">პროექტის შესახებ</a>
-  				</li>
-  				<li>
-  					<a href="#">მოთხოვნები</a>
-  				</li>
-  				<li>
-  					<a href="#">Explore</a>
-  				</li>
-  				<li>
-  					<a href="#">შესვლა</a>
-  				</li>
-  				<li>
-  					<a href="">
-  				       <img class="search" src="img/search.png">
-  			    </a>
-  				</li>
-  			</ul>
-  		</nav>	
-  		</div>
+			<nav class="nav">
+				<ul>
+					<li>
+						<a href="#">პროექტის შესახებ</a>
+					</li>
+					<li>
+						<a href="#">მოთხოვნები</a>
+					</li>
+					<li>
+						<a href="#">Explore</a>
+					</li>
+					<li>
+						<a href="#">შესვლა</a>
+					</li>
+					<li>
+						<a href="">
+							<img class="search" src="img/search.png">
+						</a>
+					</li>
+				</ul>
+			</nav>	
+		</div>
 	</header>
 
 	<div class="bd-example board banner">
-		  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-		    <ol class="carousel-indicators">
-		      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-		      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-		      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-		      <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-		    </ol>
-		    <div class="carousel-inner">
-			      <div class="carousel-item active" style="background-image: url(img/Ancient.jpg)">
-			        <img style="visibility: hidden;" src="img/Ancient.jpg" class="d-block w-100" alt="...">
-			      </div>
-			      <div class="carousel-item" style="background-image: url(img/Ancient.jpg)">
-			        <img style="visibility: hidden;" src="img/Ancient.jpg" class="d-block w-100" alt="...">
-			      </div>
-			      <div class="carousel-item" style="background-image: url(img/Ancient.jpg)">
-			        <img style="visibility: hidden;" src="img/Ancient.jpg" class="d-block w-100" alt="...">
-			      </div>
-			      <div class="carousel-item" style="background-image: url(img/Ancient.jpg)">
-			        <img style="visibility: hidden;" src="img/Ancient.jpg" class="d-block w-100" alt="...">
-			      </div>
-		    </div>
-		    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-		      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		      <span class="sr-only">Previous</span>
-		    </a>
-		    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-		      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-		      <span class="sr-only">Next</span>
-		    </a>
-		  </div>
+		<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+				<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+				<li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active" style="background-image: url(img/Ancient.jpg)">
+					<img style="visibility: hidden;" src="img/Ancient.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item" style="background-image: url(img/Ancient.jpg)">
+					<img style="visibility: hidden;" src="img/Ancient.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item" style="background-image: url(img/Ancient.jpg)">
+					<img style="visibility: hidden;" src="img/Ancient.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item" style="background-image: url(img/Ancient.jpg)">
+					<img style="visibility: hidden;" src="img/Ancient.jpg" class="d-block w-100" alt="...">
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
 
-		  <div class="banner-text">
+		<div class="banner-text">
 
-               <h1>სტატიის სათაური</h1>
-               <p>ლორემ იპსუმ,ლორემ იპსუმ,ლორემ იპსუმ,</p>
-               <p>ლორემ იპლუმ,ლორემ იპუმ,ლორემ იპსუმ</p>
-               <input type="submit" value="მეტის ნახვა">
-           </div>
-    </div>
+			<h1>სტატიის სათაური</h1>
+			<p>ლორემ იპსუმ,ლორემ იპსუმ,ლორემ იპსუმ,</p>
+			<p>ლორემ იპლუმ,ლორემ იპუმ,ლორემ იპსუმ</p>
+			<input type="submit" value="მეტის ნახვა">
+		</div>
+	</div>
 	
 
     <!-- <div class="slick-categories">
@@ -120,274 +145,301 @@
       	    <a href=""> <img class="map" src="img/globus.svg"></a>
       	    <a href="">მოგზაურობა</a>
           </div>
-    </div> -->
+      </div> -->
+
+
+
+
+      <div class="categories-slider">
+      	<div class="category-item">მოგზაურობა 1</div>
+      	<div class="category-item">მოგზაურობა 2</div>
+      	<div class="category-item">მოგზაურობა 3</div>
+      	<div class="category-item">მოგზაურობა 4</div>
+      	<div class="category-item">მოგზაურობა 5</div>
+      	<div class="category-item">მოგზაურობა 6</div>
+      	<div class="category-item">მოგზაურობა 7</div>
+      	<div class="category-item">მოგზაურობა 8</div>
+      	<div class="category-item">მოგზაურობა 9</div>
+      	<div class="category-item">მოგზაურობა 10</div>
+      	<div class="category-item">მოგზაურობა 11</div>
+      	<div class="category-item">მოგზაურობა 12</div>
+      </div>
+
+
+
+
+
 
       <div class="Globus justify-content">
-        	<div class="section">
-        		<a href=""> <img class="map" src="img/globus.svg"></a>
-        		<a class="text" href="">მოგზაურობა</a>
-        	</div>
-        	<div class="section">
-        	    <a href=""> <img class="map" src="img/globus.svg"></a>
-        	    <a href="">მოგზაურობა</a>
-          </div>
-          <div class="section">
-      	    <a href=""> <img class="map" src="img/globus.svg"></a>
-      	    <a href="">მოგზაურობა</a>
-          </div>
-          <div class="section">
-      	    <a href=""> <img class="map" src="img/globus.svg"></a>
-      	    <a href="">მოგზაურობა</a>
-          </div>
-          <div class="section">
-      	    <a href=""> <img class="map" src="img/globus.svg"></a>
-      	    <a href="">მოგზაურობა</a>
-          </div>
-          <div class="section lastChild">
-      	    <a href=""> <img class="map" src="img/globus.svg"></a>
-      	    <a href="">მოგზაურობა</a>
-          </div>
-          <div class="section lastChild">
-      	    <a href=""> <img class="map" src="img/globus.svg"></a>
-      	    <a href="">მოგზაურობა</a>
-          </div> 	
+      	<div class="section">
+      		<a href=""> <img class="map" src="img/globus.svg"></a>
+      		<a class="text" href="">მოგზაურობა</a>
+      	</div>
+      	<div class="section">
+      		<a href=""> <img class="map" src="img/globus.svg"></a>
+      		<a href="">მოგზაურობა</a>
+      	</div>
+      	<div class="section">
+      		<a href=""> <img class="map" src="img/globus.svg"></a>
+      		<a href="">მოგზაურობა</a>
+      	</div>
+      	<div class="section">
+      		<a href=""> <img class="map" src="img/globus.svg"></a>
+      		<a href="">მოგზაურობა</a>
+      	</div>
+      	<div class="section">
+      		<a href=""> <img class="map" src="img/globus.svg"></a>
+      		<a href="">მოგზაურობა</a>
+      	</div>
+      	<div class="section lastChild">
+      		<a href=""> <img class="map" src="img/globus.svg"></a>
+      		<a href="">მოგზაურობა</a>
+      	</div>
+      	<div class="section lastChild">
+      		<a href=""> <img class="map" src="img/globus.svg"></a>
+      		<a href="">მოგზაურობა</a>
+      	</div> 	
       </div>
 
       <div class="title Container">
       	<h1>რენდომ სტატიები</h1>
       </div>
 
-    <section Id=Container class="Container">
+      <section Id=Container class="Container">
 
-      <div class="Box">
-     	    <div class="img-wrapper" style="background-image: url(img/picture.png)">
-                <img style="visibility: hidden;" src="img/picture.png">
-            </div>
+      	<div class="Box">
+      		<div class="img-wrapper" style="background-image: url(img/picture.png)">
+      			<img style="visibility: hidden;" src="img/picture.png">
+      		</div>
 
-         <div class="square">
-         	 <div class="sircle">
-         	 	<div class="like">
-                 <a href=""> <img src="img/like.svg"> </a>
-              </div>
-           </div>
-         </div>
-         
-         <div class="frame">
-           <a href="">ავტორი</a>
-      	   <h4>ლორემ იპსუმ</h4>
-      	   <p>ლორემ იპსუმ,ლორემ იპსუმ,ლორემ იპსუმ,ლორე ლორემ იპსუმ,ლორემ</p>
-      	   <a href="">კატეგორია</a>
-         </div>
-      </div>
+      		<div class="square">
+      			<div class="sircle">
+      				<div class="like">
+      					<a href=""> <img src="img/like.svg"> </a>
+      				</div>
+      			</div>
+      		</div>
 
-      <div class="Box">
-	      	<div class="img-wrapper" style="background-image: url(img/picture.png)">
-	            <img style="visibility: hidden;" src="img/picture.png">
-	        </div>
+      		<div class="frame">
+      			<a href="">ავტორი</a>
+      			<h4>ლორემ იპსუმ</h4>
+      			<p>ლორემ იპსუმ,ლორემ იპსუმ,ლორემ იპსუმ,ლორე ლორემ იპსუმ,ლორემ</p>
+      			<a href="">კატეგორია</a>
+      		</div>
+      	</div>
 
-      	<div class="square">
-         	 <div class="sircle">
-         	 	<div class="like">
-                 <a href=""> <img class="heart" src="img/heart.svg"> </a>
-              </div>
-           </div>
-         </div>
+      	<div class="Box">
+      		<div class="img-wrapper" style="background-image: url(img/picture.png)">
+      			<img style="visibility: hidden;" src="img/picture.png">
+      		</div>
 
-    	  <div class="frame">
-           <a href="">ავტორი</a>
-           <h4>ლორემ იპსუმ</h4>
-           <p>ლორემ იპსუმ,ლორემ იპსუმ,ლორემ იპსუმ,ლორე ლორემ იპსუმ,ლორემ</p>
-           <a href="">კატეგორია</a>
-        </div>
-      </div>
+      		<div class="square">
+      			<div class="sircle">
+      				<div class="like">
+      					<a href=""> <img class="heart" src="img/heart.svg"> </a>
+      				</div>
+      			</div>
+      		</div>
 
-      <div class="Box lastChild">
-	      	<div class="img-wrapper" style="background-image: url(img/picture.png)">
-		        <img style="visibility: hidden;" src="img/picture.png">
-		    </div>
+      		<div class="frame">
+      			<a href="">ავტორი</a>
+      			<h4>ლორემ იპსუმ</h4>
+      			<p>ლორემ იპსუმ,ლორემ იპსუმ,ლორემ იპსუმ,ლორე ლორემ იპსუმ,ლორემ</p>
+      			<a href="">კატეგორია</a>
+      		</div>
+      	</div>
 
-      	<div class="square">
-         	 <div class="sircle">
-         	 	<div class="like">
-                 <a href=""> <img src="img/like.svg"> </a>
-              </div>
-           </div>
-         </div>
+      	<div class="Box lastChild">
+      		<div class="img-wrapper" style="background-image: url(img/picture.png)">
+      			<img style="visibility: hidden;" src="img/picture.png">
+      		</div>
 
-    	  <div class="frame">
-           <a href="">ავტორი</a>
-           <h4>ლორემ იპსუმ</h4>
-           <p>ლორემ იპსუმ,ლორემ იპსუმ,ლორემ იპსუმ,ლორე ლორემ იპსუმ,ლორემ</p>
-           <a href="">კატეგორია</a>
-        </div>
-      </div>
-</section>
+      		<div class="square">
+      			<div class="sircle">
+      				<div class="like">
+      					<a href=""> <img src="img/like.svg"> </a>
+      				</div>
+      			</div>
+      		</div>
+
+      		<div class="frame">
+      			<a href="">ავტორი</a>
+      			<h4>ლორემ იპსუმ</h4>
+      			<p>ლორემ იპსუმ,ლორემ იპსუმ,ლორემ იპსუმ,ლორე ლორემ იპსუმ,ლორემ</p>
+      			<a href="">კატეგორია</a>
+      		</div>
+      	</div>
+      </section>
 
       <div class="title Container">
       	<h1>უახლესი სტატიები</h1>
       </div>
 
- <section Id=Container class="Container">
+      <section Id=Container class="Container">
 
-      <div class="Box">
-     	   <div class="img-wrapper" style="background-image: url(img/picture.png)">
-	            <img style="visibility: hidden;" src="img/picture.png">
-	        </div>
-
-         <div class="square">
-         	 <div class="sircle">
-         	 	<div class="like">
-                 <a href=""> <img src="img/like.svg"> </a>
-              </div>
-           </div>
-         </div>
-
-         <div class="frame">
-             <a href="">ავტორი</a>
-             <h4>ლორემ იპსუმ</h4>
-             <p>ლორემ იპსუმ,ლორემ იპსუმ,ლორემ იპსუმ,ლორე ლორემ იპსუმ,ლორემ</p>
-             <a href="">კატეგორია</a>
-         </div>
-      </div>
-
-      <div class="Box">
-	      	<div class="img-wrapper" style="background-image: url(img/picture.png)">
-		        <img style="visibility: hidden;" src="img/picture.png">
-		    </div>
-
-      	<div class="square">
-         	 <div class="sircle">
-         	 	<div class="like">
-                 <a href=""> <img src="img/heart.svg"> </a>
-            </div>
-           </div>
-         </div>
-
-    	  <div class="frame">
-           <a href="">ავტორი</a>
-           <h4>ლორემ იპსუმ</h4>
-           <p>ლორემ იპსუმ,ლორემ იპსუმ,ლორემ იპსუმ,ლორე ლორემ იპსუმ,ლორემ</p>
-           <a href="">კატეგორია</a>
-        </div>
-      </div>
-
-      <div class="Box">
-            <div class="img-wrapper" style="background-image: url(img/picture.png)">
-	            <img style="visibility: hidden;" src="img/picture.png">
-	        </div>
-
-      	<div class="square">
-         	 <div class="sircle">
-         	 	<div class="like">
-                 <a href=""> <img src="img/like.svg"> </a>
-            </div>
-           </div>
-         </div>
-
-    	  <div class="frame">
-           <a href="">ავტორი</a>
-           <h4>ლორემ იპსუმ</h4>
-           <p>ლორემ იპსუმ,ლორემ იპსუმ,ლორემ იპსუმ,ლორე ლორემ იპსუმ,ლორემ</p>
-           <a href="">კატეგორია</a>
-        </div>
-      </div>
-
-      <div class="Box">
-     	   <div class="img-wrapper" style="background-image: url(img/picture.png)">
-	            <img style="visibility: hidden;" src="img/picture.png">
-	       </div>
-
-         <div class="square">
-         	 <div class="sircle">
-         	 	<div class="like">
-                 <a href=""> <img src="img/like.svg"> </a>
-              </div>
-           </div>
-         </div>
-
-         <div class="frame">
-           <a href="">ავტორი</a>
-           <h4>ლორემ იპსუმ</h4>
-           <p>ლორემ იპსუმ,ლორემ იპსუმ,ლორემ იპსუმ,ლორე ლორემ იპსუმ,ლორემ</p>
-           <a href="">კატეგორია</a>
-         </div>
-      </div>
-
-      <div class="Box">
+      	<div class="Box">
       		<div class="img-wrapper" style="background-image: url(img/picture.png)">
-	            <img style="visibility: hidden;" src="img/picture.png">
-	        </div>
+      			<img style="visibility: hidden;" src="img/picture.png">
+      		</div>
 
-      	<div class="square">
-         	 <div class="sircle">
-         	 	<div class="like">
-                 <a href=""> <img src="img/heart.svg"> </a>
-            </div>
-           </div>
-        </div>
+      		<div class="square">
+      			<div class="sircle">
+      				<div class="like">
+      					<a href=""> <img src="img/like.svg"> </a>
+      				</div>
+      			</div>
+      		</div>
 
-    	  <div class="frame">
-           <a href="">ავტორი</a>
-           <h4>ლორემ იპსუმ</h4>
-           <p>ლორემ იპსუმ,ლორემ იპსუმ,ლორემ იპსუმ,ლორე ლორემ იპსუმ,ლორემ</p>
-           <a href="">კატეგორია</a>
-        </div>
-      </div>
+      		<div class="frame">
+      			<a href="">ავტორი</a>
+      			<h4>ლორემ იპსუმ</h4>
+      			<p>ლორემ იპსუმ,ლორემ იპსუმ,ლორემ იპსუმ,ლორე ლორემ იპსუმ,ლორემ</p>
+      			<a href="">კატეგორია</a>
+      		</div>
+      	</div>
 
-      <div class="Box">
+      	<div class="Box">
       		<div class="img-wrapper" style="background-image: url(img/picture.png)">
-	            <img style="visibility: hidden;" src="img/picture.png">
-	        </div>
+      			<img style="visibility: hidden;" src="img/picture.png">
+      		</div>
 
-      	<div class="square">
-         	 <div class="sircle">
-         	 	<div class="like">
-                 <a href=""> <img src="img/like.svg"> </a>
-              </div>
-           </div>
-         </div>
+      		<div class="square">
+      			<div class="sircle">
+      				<div class="like">
+      					<a href=""> <img src="img/heart.svg"> </a>
+      				</div>
+      			</div>
+      		</div>
 
-    	  <div class="frame">
-           <a href="">ავტორი</a>
-           <h4>ლორემ იპსუმ</h4>
-           <p>ლორემ იპსუმ,ლორემ იპსუმ,ლორემ იპსუმ,ლორე ლორემ იპსუმ,ლორემ</p>
-           <a href="">კატეგორია</a>
-        </div>
-      </div>
-</section>
+      		<div class="frame">
+      			<a href="">ავტორი</a>
+      			<h4>ლორემ იპსუმ</h4>
+      			<p>ლორემ იპსუმ,ლორემ იპსუმ,ლორემ იპსუმ,ლორე ლორემ იპსუმ,ლორემ</p>
+      			<a href="">კატეგორია</a>
+      		</div>
+      	</div>
 
-    <footer>
-    	<div class="container justify-content">
-    		<div class="social">
-    		
-					<a href="https://www.instagram.com/">
-				       <img class="instagram" src="img/instagram.svg">
-				  </a>
-				  <a href="https://www.facebook.com/">
-				       <img class="fb" src="img/fb.svg">
-			    </a>
-		    </div>
+      	<div class="Box">
+      		<div class="img-wrapper" style="background-image: url(img/picture.png)">
+      			<img style="visibility: hidden;" src="img/picture.png">
+      		</div>
 
-    		<nav class="nav">
-    			<ul>
-    				<li>
-    					<a href="#">+995xxxxxx</a>
-    				</li>
-    				<li>
-    					<a href="#">howto@Gmail.com</a>
-    				</li>
-    			</ul>
-    		</nav>	
-		  </div>
-    	
-    </footer>
+      		<div class="square">
+      			<div class="sircle">
+      				<div class="like">
+      					<a href=""> <img src="img/like.svg"> </a>
+      				</div>
+      			</div>
+      		</div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      		<div class="frame">
+      			<a href="">ავტორი</a>
+      			<h4>ლორემ იპსუმ</h4>
+      			<p>ლორემ იპსუმ,ლორემ იპსუმ,ლორემ იპსუმ,ლორე ლორემ იპსუმ,ლორემ</p>
+      			<a href="">კატეგორია</a>
+      		</div>
+      	</div>
+
+      	<div class="Box">
+      		<div class="img-wrapper" style="background-image: url(img/picture.png)">
+      			<img style="visibility: hidden;" src="img/picture.png">
+      		</div>
+
+      		<div class="square">
+      			<div class="sircle">
+      				<div class="like">
+      					<a href=""> <img src="img/like.svg"> </a>
+      				</div>
+      			</div>
+      		</div>
+
+      		<div class="frame">
+      			<a href="">ავტორი</a>
+      			<h4>ლორემ იპსუმ</h4>
+      			<p>ლორემ იპსუმ,ლორემ იპსუმ,ლორემ იპსუმ,ლორე ლორემ იპსუმ,ლორემ</p>
+      			<a href="">კატეგორია</a>
+      		</div>
+      	</div>
+
+      	<div class="Box">
+      		<div class="img-wrapper" style="background-image: url(img/picture.png)">
+      			<img style="visibility: hidden;" src="img/picture.png">
+      		</div>
+
+      		<div class="square">
+      			<div class="sircle">
+      				<div class="like">
+      					<a href=""> <img src="img/heart.svg"> </a>
+      				</div>
+      			</div>
+      		</div>
+
+      		<div class="frame">
+      			<a href="">ავტორი</a>
+      			<h4>ლორემ იპსუმ</h4>
+      			<p>ლორემ იპსუმ,ლორემ იპსუმ,ლორემ იპსუმ,ლორე ლორემ იპსუმ,ლორემ</p>
+      			<a href="">კატეგორია</a>
+      		</div>
+      	</div>
+
+      	<div class="Box">
+      		<div class="img-wrapper" style="background-image: url(img/picture.png)">
+      			<img style="visibility: hidden;" src="img/picture.png">
+      		</div>
+
+      		<div class="square">
+      			<div class="sircle">
+      				<div class="like">
+      					<a href=""> <img src="img/like.svg"> </a>
+      				</div>
+      			</div>
+      		</div>
+
+      		<div class="frame">
+      			<a href="">ავტორი</a>
+      			<h4>ლორემ იპსუმ</h4>
+      			<p>ლორემ იპსუმ,ლორემ იპსუმ,ლორემ იპსუმ,ლორე ლორემ იპსუმ,ლორემ</p>
+      			<a href="">კატეგორია</a>
+      		</div>
+      	</div>
+      </section>
+
+      <footer>
+      	<div class="container justify-content">
+      		<div class="social">
+
+      			<a href="https://www.instagram.com/">
+      				<img class="instagram" src="img/instagram.svg">
+      			</a>
+      			<a href="https://www.facebook.com/">
+      				<img class="fb" src="img/fb.svg">
+      			</a>
+      		</div>
+
+      		<nav class="nav">
+      			<ul>
+      				<li>
+      					<a href="#">+995xxxxxx</a>
+      				</li>
+      				<li>
+      					<a href="#">howto@Gmail.com</a>
+      				</li>
+      			</ul>
+      		</nav>	
+      	</div>
+
+      </footer>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+     <!--  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+<!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+<script type="text/javascript" src="slick/slick.min.js"></script>
 
 <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
 <!-- <script type="text/javascript" src="slick/slick.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
@@ -417,7 +469,45 @@
   ]
 });
     });
-  </script> -->
+</script> -->
+
+
+
+<script>
+
+$(document).ready(function(){
+  $('.categories-slider').slick({
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 2,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnFocus: true,
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2
+      }
+    }
+  ]
+  });
+});
+
+</script>
+
 
 </body>
 </html>
