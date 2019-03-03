@@ -43,7 +43,7 @@ header .container {
 }
 
 .logo a{
-	font-size:28px;
+	font-size:30px;
 	width: 85px;
 }
 a{
@@ -51,32 +51,90 @@ a{
 }
 .logo:hover{
 	color:#46A8D4;
-	font-size:28px;
 	text-decoration: none;
 }
 
-nav ul{
+.nav{
+	vertical-align: center;
+}
+
+.nav ul{
 	display: flex;
 }
 
-nav li{
+.nav li{
 	margin-left: 50px;
 }
 
-nav a{
+.nav a{
 	color:#949494;
 	font-size:16px; 
 }
-nav a:hover{
+.nav a:hover{
 	color:#46A8D4;
-	font-size:18px;
 	text-decoration: none;
 }
 
-
-.search{
-	height:16px;
+form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 32px;
+    height: 32px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 2px solid #949494;
+    padding: 5px;
 }
+
+header input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 22.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 5px;
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #949494;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form:hover{
+    width: 200px;
+    cursor: pointer;
+}
+
+form:hover input{
+    display: block;
+}
+
+form:hover .fa{
+    background: #46A8D4;
+    color: white;
+}
+
+
 
 /*burger*/
 header label{
@@ -147,6 +205,32 @@ input[type=submit]:hover{
 
 /* globus*/
 
+.categories-slider {	
+	width: 75%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.categories-slider .category-item {	
+    margin: 0 10px;
+}
+
+.slick-prev:before, .slick-next:before {
+   color:#46A8D4;
+}
+.slick-prev:before, .slick-next:before{
+	background-color: white;
+}
+.category-item img{
+	width:70px;
+}
+.category-item a{
+	font-size: 15px;
+    color:#46A8D4;
+    text-decoration: none;
+    vertical-align: center;
+}
+
 .Globus{
 	width: 820px;
 	margin: auto;
@@ -165,7 +249,6 @@ input[type=submit]:hover{
     color:#46A8D4;
 }
 .section a:hover{
-	font-size: 16px;
 	text-decoration: none;
 }
 
@@ -213,6 +296,49 @@ input[type=submit]:hover{
     background-size: cover;
 
 }
+
+/*star*/
+
+.rate {
+    float :right;
+    height: 20px;
+    padding: 0 35px;
+    padding-bottom: 5px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:20px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
+
+/*like*/
 
 .Box img{
 	width: 100%;
@@ -385,11 +511,11 @@ footer   img {
 
 	}
 
-	.Globus{
+/*	.Globus{
 	width: 180px;
 	margin: auto;
 	margin-top: 10px;
-    }
+    }*/
     h1{
     	font-size: 20px;
     }
